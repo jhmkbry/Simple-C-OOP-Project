@@ -1,0 +1,36 @@
+using System;
+
+// Define a class
+public class Animal
+{
+    // Properties
+    public string Name { get; set; }
+    public int Age { get; set; }
+
+    // Constructor
+    public Animal(string name, int age)
+    {
+        Name = name;
+        Age = age;
+    }
+
+    // Method
+    public void MakeSound()
+    {
+        Console.WriteLine("The animal makes a sound.");
+    }
+}
+
+// Main class
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Create an object of the Animal class
+        Animal myAnimal = new Animal("Cat", 5);
+
+        // Accessing properties and methods of the object
+        Console.WriteLine($"Name: {myAnimal.Name}, Age: {myAnimal.Age}");
+        myAnimal.MakeSound();
+    }
+}
